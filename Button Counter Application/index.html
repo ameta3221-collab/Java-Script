@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Counter App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen bg-black">
+
+  <h2 class="text-center text-yellow-500 font-bold text-4xl p-7">
+    Button Counter Application
+  </h2>
+
+  <div class="min-h-[80vh] flex justify-center items-center">
+    <div class="flex gap-16">
+             <!-- STATUS -->
+      <div class="text-white font-bold text-2xl space-y-2">
+       <h2 id="text_dec">Decrement</h2>
+      </div>
+
+      <!-- COUNTER 1 -->
+      <div class="text-center">
+        <div class="bg-gray-300 flex w-80 h-10 rounded-lg mb-3">
+          <button id="btn1_dec" class="w-10">-</button>
+          <h2 id="data1" class="w-60 flex justify-center items-center bg-white">0</h2>
+          <button id="btn1_incr" class="w-10">+</button>
+        </div>
+
+        <button id="reset1"
+          class="border px-4 py-1 rounded-xl text-yellow-500 font-bold shadow-lg shadow-red">
+          RESET
+        </button>
+      </div>
+
+      
+            <!-- STATUS -->
+      <div class="text-white font-bold text-2xl space-y-2">
+  <h2 id="text_incr">Increment</h2>
+ </div>
+
+    </div>
+  </div>
+
+<script>src="btnconect.js"</script>
+
+</body>
+</html>
